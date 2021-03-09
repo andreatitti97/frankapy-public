@@ -1,4 +1,4 @@
-# frankapy
+# frankapy-public
 
 ## Requirements
 
@@ -37,9 +37,9 @@ See detailed instructions [here](https://github.com/protocolbuffers/protobuf/blo
 1. Clone Repo and its Submodules:
 
    ```bash
-   git clone --recurse-submodules https://github.com/iamlab-cmu/frankapy.git
+   git clone --recurse-submodules https://github.com/iamlab-cmu/frankapy-public.git
    ```
-All directories below are given relative to `/frankapy`.
+All directories below are given relative to `/frankapy-public`.
 
 2. First source into your virtualenv or conda env (should be Python 3.6). Then:
    ```bash
