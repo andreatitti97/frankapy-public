@@ -11,27 +11,6 @@
 This library is intended to be installed on any computer in the same ROS network with the computer that interfaces with the Franka (we call the latter the Control PC).
 `FrankaPy` will send commands to [franka-interface](https://github.com/iamlab-cmu/franka-interface), which actually controls the robot.
 
-## Install ProtoBuf
-
-**This is only needed if you plan to modify the proto messages. You don't need to install or compile protobuf for using frankapy**
-
-We use both C++ and Python versions of protobufs so you would need to install Protobufs from source. 
-
-Do `nproc` to find out how many cores you have, and use that as the `N` number in the `make` command below:
-
-```shell
-sudo apt-get install autoconf automake libtool curl make g++ unzip
-wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-all-3.11.4.zip
-unzip protobuf-all-3.11.4.zip
-cd protobuf-3.11.4
-./configure
-make -jN
-make check -jN
-sudo make install
-sudo ldconfig
-```
-See detailed instructions [here](https://github.com/protocolbuffers/protobuf/blob/master/src/README.md)
-
 ## Installation
 
 1. Clone Repo and its Submodules:
@@ -49,11 +28,6 @@ All directories below are given relative to `/frankapy-public`.
 3. To compile the catkin_ws use the following script:
 	```bash
    ./bash_scripts/make_catkin.sh
-   ```
-
-4. To make the protobufs use the following script (**you don't need to do this if you haven't modified the proto messages**):
-	```bash
-   ./bash_scripts/make_proto.sh
    ```
 
 ## Configuring the network with the Control PC

@@ -23,7 +23,7 @@ where:
     ./start_control_pc.sh -i iam-space -u iam-lab -p 12345678 -d ~/Documents/franka-interface -r 1 -s 0
     "
 
-control_pc_uname="iam-lab"
+control_pc_uname="student"
 control_pc_use_password=0
 control_pc_password=""
 control_pc_franka_interface_path="~/Documents/franka-interface"
